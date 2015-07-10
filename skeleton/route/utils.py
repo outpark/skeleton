@@ -1,5 +1,5 @@
-from bitund.extensions import auth
-from bitund.models import User
+from skeleton.extensions import auth
+from skeleton.models import User
 from flask import g, jsonify
 
 #this one takes either password or token and verifies it.

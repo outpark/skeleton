@@ -1,8 +1,8 @@
 ===============================
-Bitund
+Skeleton
 ===============================
 
-A bitcoin fund web app
+A skeleton for flask restful-api development
 
 
 Quickstart
@@ -12,7 +12,7 @@ First, set your app's secret key as an environment variable. For example, exampl
 
 .. code-block:: bash
 
-    export BITUND_SECRET='something-really-secret'
+    export SKELETON_SECRET='something-really-secret'
 
 
 Then run the following commands to bootstrap your environment.
@@ -20,8 +20,8 @@ Then run the following commands to bootstrap your environment.
 
 ::
 
-    git clone https://github.com/kwk236/bitund
-    cd bitund
+    git clone https://github.com/kwk236/skeleton
+    cd skeleton
     pip install -r requirements/dev.txt
     python manage.py server
 
@@ -41,7 +41,7 @@ Once you have installed your DBMS, run the following to create your app's databa
 Deployment
 ----------
 
-In your production environment, make sure the ``BITUND_ENV`` environment variable is set to ``"prod"``.
+In your production environment, make sure the ``FLASK_ENV`` environment variable is set to ``"prod"``.
 
 
 Shell

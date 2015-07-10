@@ -3,9 +3,9 @@
 from flask import (Blueprint, request, abort, render_template, url_for, jsonify, g)
 from flask_restful import Resource, reqparse, fields, marshal
 
-from bitund.extensions import auth, api
-from bitund.models import User
-from bitund.database import db
+from skeleton.extensions import auth, api
+from skeleton.models import User
+from skeleton.database import db
 
 
 from .utils import *

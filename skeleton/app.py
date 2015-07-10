@@ -2,9 +2,9 @@
 '''The app module, containing the app factory function.'''
 from flask import Flask, render_template
 
-from bitund.settings import ProdConfig
-from bitund.assets import assets
-from bitund.extensions import (
+from skeleton.settings import ProdConfig
+from skeleton.assets import assets
+from skeleton.extensions import (
     bcrypt,
     cache,
     db,
@@ -12,7 +12,7 @@ from bitund.extensions import (
     debug_toolbar,
     api,
 )
-from bitund import rest
+from skeleton import route
 
 
 def create_app(config_object=ProdConfig):
@@ -40,6 +40,6 @@ def register_extensions(app):
 
 
 def register_blueprints(app):
-    app.register_blueprint(rest.api.mod)
+    app.register_blueprint(route.api.mod)
     return None
 

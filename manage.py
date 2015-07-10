@@ -6,12 +6,12 @@ import subprocess
 from flask_script import Manager, Shell, Server
 from flask_migrate import MigrateCommand
 
-from bitund.app import create_app
-from bitund.models import User
-from bitund.settings import DevConfig, ProdConfig
-from bitund.database import db
+from skeleton.app import create_app
+from skeleton.models import User
+from skeleton.settings import DevConfig, ProdConfig
+from skeleton.database import db
 
-if os.environ.get("BITUND_ENV") == 'prod':
+if os.environ.get("SKELETON_ENV") == 'prod':
     app = create_app(ProdConfig)
 else:
     app = create_app(DevConfig)

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import datetime as dt
 
-from flask_login import UserMixin
+# from flask_login import UserMixin
 
-from bitund.extensions import bcrypt
-from bitund.database import (
+from skeleton.extensions import bcrypt
+from skeleton.database import (
     Column,
     db,
     Model,
@@ -30,7 +30,7 @@ class Role(SurrogatePK, Model):
     def __repr__(self):
         return '<Role({name})>'.format(name=self.name)
 
-class User(UserMixin, SurrogatePK, Model):
+class User(SurrogatePK, Model):
 
     __tablename__ = 'users'
     username = Column(db.String(80), unique=True, nullable=False)
