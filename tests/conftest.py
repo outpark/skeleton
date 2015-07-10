@@ -5,9 +5,9 @@ import os
 import pytest
 from webtest import TestApp
 
-from bitund.settings import TestConfig
-from bitund.app import create_app
-from bitund.database import db as _db
+from skeleton.settings import TestConfig
+from skeleton.app import create_app
+from skeleton.database import db as _db
 
 from .factories import UserFactory
 

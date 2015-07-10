@@ -4,7 +4,7 @@ import datetime as dt
 
 import pytest
 
-from bitund.user.models import User, Role
+from skeleton.user.models import User, Role
 from .factories import UserFactory
 
 @pytest.mark.usefixtures('db')

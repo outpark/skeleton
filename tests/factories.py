@@ -2,8 +2,8 @@
 from factory import Sequence, PostGenerationMethodCall
 from factory.alchemy import SQLAlchemyModelFactory
 
-from bitund.user.models import User
-from bitund.database import db
+from skeleton.user.models import User
+from skeleton.database import db
 
 class BaseFactory(SQLAlchemyModelFactory):
 

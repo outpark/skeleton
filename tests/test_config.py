@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from bitund.app import create_app
-from bitund.settings import ProdConfig, DevConfig
+from skeleton.app import create_app
+from skeleton.settings import ProdConfig, DevConfig
 
 def test_production_config():
     app = create_app(ProdConfig)

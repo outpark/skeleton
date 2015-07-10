@@ -7,7 +7,7 @@ import pytest
 from flask import url_for
 
 
-from bitund.user.models import User
+from skeleton.user.models import User
 from .factories import UserFactory
 
 

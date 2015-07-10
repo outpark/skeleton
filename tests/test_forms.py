@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import pytest
 
-from bitund.public.forms import LoginForm
-from bitund.user.forms import RegisterForm
+from skeleton.public.forms import LoginForm
+from skeleton.user.forms import RegisterForm
 from .factories import UserFactory
 
 class TestRegisterForm:
